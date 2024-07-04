@@ -1,0 +1,396 @@
+@import url('https://fonts.googleapis.com/css2?family=Rokkitt:wght@100..900&Bricolage+Grotesque&display=swap');
+
+:root {
+    --cor-primaria: #F9F3EB;
+    --cor-secundaria: #ecfafe;
+    --cor-terciaria: #2672FB;
+    --cor-texto: #000000;
+    --cor-background-imagem1: linear-gradient(to top, #FFFFFF, #C5F0FC);
+    --cor-background-imagem2: linear-gradient(to top, #E6E6FA, #FFFFFF);
+    --cor-background-botton: linear-gradient(to left, #6913CC, #2672FB);
+
+    --fonte-primaria: 'Rokkitt', sans-serif;
+    --fonte-titulos: 'Bricolage Grotesque', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    box-sizing: border-box;
+    background-color: var(--cor-primaria);
+    color: var(--cor-texto);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.nav-bar-container {
+    background-color: #F9F3EB;
+    max-width: 1920px;
+    padding-left: 24px;
+    padding-right: 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.logotype {
+    max-width: 15%;
+    margin-left: 12%;
+
+}
+
+.nav-bar-links {
+    display: flex;
+    justify-content: flex-end;
+    gap: 80px;
+    font-family: var(--fonte-primaria);
+    font-size: 1.3rem;
+    font-weight: 400;
+    color: var(--cor-texto);
+    margin-right: 10%;
+
+}
+
+.nav-bar-links a {
+    text-decoration: none;
+    color: inherit;
+
+}
+
+.container__image__bg {
+    background-color: #F9F3EB;
+
+}
+
+.image__bg {
+    width: 100%;
+    height: 100%;
+    transform: scaleX(-1)
+}
+
+.home-section {
+    padding: 5% 15%;
+    padding-bottom: 5%;
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+    position: relative;
+    top: -200px;
+    left: -100px;
+
+}
+
+.apresentacao__conteudo__home {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    background-color: #FFFFFF;
+    padding: 5%;
+    border-radius: 20px;
+    position: relative;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+}
+
+.apresentacao__conteudo__titulo {
+    font-size: 2.5rem;
+    font-family: var(--fonte-primaria);
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.titulo-decoracao {
+    color: var(--cor-terciaria);
+}
+
+.apresentacao__conteudo__paragrafo {
+    font-size: 1.4rem;
+    font-family: var(--fonte-primaria);
+    color: var(--cor-texto);
+    margin-top: 8%;
+}
+
+.apresentacao-links {
+    margin-top: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 230px;
+    height: 51px;
+    background-image: var(--cor-background-botton);
+    border-radius: 50px;
+}
+
+.apresentacao-links:hover {
+    background-image: linear-gradient(to left, #2672FB, #6913CC);
+    box-shadow: 10px 10px 1px rgba(170, 165, 158, 0.5);
+}
+
+.orcamento-button {
+    text-decoration: none;
+    color: var(--cor-primaria);
+    font-family: var(--fonte-primaria);
+    font-size: 1.25rem;
+}
+
+.texto__curto {
+    font-family: var(--fonte-titulos);
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    display: flex;
+    flex-direction: column;
+    padding: 5%;
+    font-size: 2.5rem;
+    color: black;
+
+
+}
+
+.texto__curto::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 3px;
+    margin-top: 5px;
+    background-color: #ccc;
+}
+
+.container__icons {
+    padding-bottom: 10%;
+    padding-top: 10%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.icons__e__texto__ecology {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.icon__ecology {
+    width: 20%;
+    padding: 5%;
+    display: flex;
+}
+
+.texto__legenda__ecology {
+    font-family: var(--fonte-primaria);
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.icons__e__texto__like {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.icon__like {
+    width: 20%;
+    padding: 5%;
+    display: flex;
+}
+
+.texto__legenda__like {
+    font-family: var(--fonte-primaria);
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.icons__e__texto__cost {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.icon__cost {
+    width: 20%;
+    padding: 5%;
+    display: flex;
+}
+
+.texto__legenda__cost {
+    font-family: var(--fonte-primaria);
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.titulo__reputacao {
+    font-family: var(--fonte-titulos);
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 2.8rem;
+    padding: 5%;
+
+}
+
+.titulo__reputacao::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 3px;
+    margin-top: 5px;
+    background-color: #ccc;
+}
+
+
+.depoimentos__section {
+    display: flex;
+    gap: 0.2%;
+
+}
+
+.card__depoimento_1 {
+    width: 25%;
+    margin: 5%;
+    padding: 2%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 5%;
+    background-color: var(--cor-secundaria);
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+
+}
+
+.foto__perfil__talita {
+    width: 20%;
+    border-radius: 60px;
+}
+
+.depoimento__talita {
+    font-family: var(--fonte-primaria);
+    font-weight: 400;
+    font-style: italic;
+    font-size: 1.2rem;
+    text-align: center;
+    padding: 5%;
+}
+
+#name {
+    font-family: var(--fonte-primaria);
+    font-weight: 600;
+    font-style: normal;
+    font-size: 0.8rem;
+}
+
+.card__depoimento_2 {
+    width: 25%;
+    margin: 5%;
+    padding: 2%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 5%;
+    background-color: var(--cor-secundaria);
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+
+}
+
+.foto__perfil__russo {
+    width: 20%;
+    border-radius: 60px;
+}
+
+.depoimento__russo {
+    font-family: var(--fonte-primaria);
+    font-weight: 400;
+    font-style: italic;
+    font-size: 1.2rem;
+    text-align: center;
+    padding: 5%;
+}
+
+.card__depoimento_3 {
+    width: 25%;
+    margin: 5%;
+    padding: 2%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 5%;
+    background-color: var(--cor-secundaria);
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+
+}
+
+.foto__perfil__vinagre {
+    width: 20%;
+    border-radius: 60px;
+}
+
+.depoimento__vinagre {
+    font-family: var(--fonte-primaria);
+    font-weight: 400;
+    font-style: italic;
+    font-size: 1.2rem;
+    text-align: center;
+    padding: 5%;
+}
+
+.titulo__service {
+    padding: 5%;
+    font-size: 2.5rem;
+    font-family: var(--fonte-titulos);
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.titulo__service::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 3px;
+    margin-top: 5px;
+    background-color: #ccc;
+}
+
+.servicos__section {
+    display: flex;
+}
+
+.card__icons__service {
+    width: 20%;
+    background-color: red;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.icons__service__domestic {
+    width: 15%;
+    padding: 5%;
+}
+
+.texto__domestic {
+    padding: 5%;
+    font-size: 1.2rem;
+    font-family: var(--fonte-primaria);
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: 400;
+}
+
+/*.rodape {
+    border-top: 1px solid #333;
+    color: #FFFFFF;
+    bottom: 0;
+    left: 0;
+    height: 50px;
+    position: fixed;
+    width: 100%;
+    background-color: #2672FB;
+    padding: 2% 0% 0% 2%;
+} */
